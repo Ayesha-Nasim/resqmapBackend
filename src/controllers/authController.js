@@ -4,7 +4,7 @@ import { generateToken } from "../utils/tokenUtils.js";
 import { OAuth2Client } from "google-auth-library";
 // VALIDATION HELPERS 
 const client = new OAuth2Client(
-  "1063358640985-8l0c1luv17umno22ehhapts0mhj1thor.apps.googleusercontent.com"
+  "230228725216-mjpeue51jbtd6978ot0hg82opmmbk2je.apps.googleusercontent.com"
 );
 
 const isValidEmail = (email) => {
@@ -118,8 +118,8 @@ export const googleAuth = async (req, res) => {
     const ticket = await client.verifyIdToken({
       idToken: token,
       audience: [
-        "1063358640985-8l0c1luv17umno22ehhapts0mhj1thor.apps.googleusercontent.com",
-        "1063358640985-29tt8mdak3so9fponsk74qm3rnm2o51b.apps.googleusercontent.com"
+        "230228725216-mjpeue51jbtd6978ot0hg82opmmbk2je.apps.googleusercontent.com",
+        "230228725216-06vgm1hatm1l5j30jqs23l4i98u3mt8l.apps.googleusercontent.com"
       ],
     });
 
